@@ -3,7 +3,7 @@ module eino-mcp
 go 1.23.4
 
 require (
-	github.com/ThinkInAIXYZ/go-mcp v0.0.0-20250331151544-7d298a8c89c3
+	github.com/ThinkInAIXYZ/go-mcp v0.0.0-20250401153257-7b4f8cc60847
 	github.com/cloudwego/eino v0.3.16
 	github.com/cloudwego/eino-ext/components/model/openai v0.0.0-20250320062631-616205c32186
 	github.com/cloudwego/eino-ext/components/tool/mcp v0.0.0-20250320062631-616205c32186

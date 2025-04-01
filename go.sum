@@ -1,5 +1,5 @@
-github.com/ThinkInAIXYZ/go-mcp v0.0.0-20250331151544-7d298a8c89c3 h1:MFbrhMcwcryDnKgscmj8JQ9SfHVQK24Py0Xui5CSOvE=
-github.com/ThinkInAIXYZ/go-mcp v0.0.0-20250331151544-7d298a8c89c3/go.mod h1:NdGwzCMss/yZxrFuPxgrZ15KTocVilkqZ3f8Zz9IDig=
+github.com/ThinkInAIXYZ/go-mcp v0.0.0-20250401153257-7b4f8cc60847 h1:g3/fsy7hW0TeX47TjE16SoHJMzqPV9TrfxZe4BFgoeg=
+github.com/ThinkInAIXYZ/go-mcp v0.0.0-20250401153257-7b4f8cc60847/go.mod h1:NdGwzCMss/yZxrFuPxgrZ15KTocVilkqZ3f8Zz9IDig=
 github.com/airbrake/gobrake v3.6.1+incompatible/go.mod h1:wM4gu3Cn0W0K7GUuVWnlXZU11AGBXMILnrdOU8Kn00o=
 github.com/bitly/go-simplejson v0.5.0/go.mod h1:cXHtHw4XUPsvGaxgjIAn8PhEWG9NfngEKAMDJEczWVA=
 github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869/go.mod h1:Ekp36dRnpXw/yCqJaO+ZrUyxD+3VXMFFr56k5XYrpB4=

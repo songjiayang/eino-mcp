@@ -2,6 +2,7 @@ package main
 
 import (
 	"errors"
+	"flag"
 	"fmt"
 	"log"
 	"time"
@@ -11,13 +12,31 @@ import (
 	"github.com/ThinkInAIXYZ/go-mcp/transport"
 )
 
-func main() {
-	listen, _ := transport.NewSSEServerTransport("localhost:8080")
+var (
+	mode string
+)
 
+func getTransport() (t transport.ServerTransport) {
+	flag.StringVar(&mode, "transport", "stdio", "The transport to use, should be \"stdio\" or \"sse\"")
+	flag.Parse()
+
+	if mode == "stdio" {
+		log.Println("start mcp server with stdio transport")
+		t = transport.NewStdioServerTransport()
+	} else {
+		addr := "localhost:8080"
+		log.Printf("start mcp server with sse transport, listen %s", addr)
+		t, _ = transport.NewSSEServerTransport(addr)
+	}
+
+	return t
+}
+
+func main() {
 	server, err := server.NewServer(
-		listen,
+		getTransport(),
 		server.WithServerInfo(protocol.Implementation{
-			Name:    "ExampleServer",
+			Name:    "current-time-v2-client",
 			Version: "1.0.0",
 		}))
 
