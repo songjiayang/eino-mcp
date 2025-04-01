@@ -3,11 +3,11 @@ module eino-mcp
 go 1.23.4
 
 require (
+	github.com/ThinkInAIXYZ/go-mcp v0.0.0-20250331151544-7d298a8c89c3
 	github.com/cloudwego/eino v0.3.16
 	github.com/cloudwego/eino-ext/components/model/openai v0.0.0-20250320062631-616205c32186
 	github.com/cloudwego/eino-ext/components/tool/mcp v0.0.0-20250320062631-616205c32186
 	github.com/mark3labs/mcp-go v0.15.0
-	go-mcp v1.0.0
 )
 
 require (
@@ -49,5 +49,3 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace go-mcp v1.0.0 => github.com/ThinkInAIXYZ/go-mcp v0.0.0-20250330124011-1b95de1a9eeb

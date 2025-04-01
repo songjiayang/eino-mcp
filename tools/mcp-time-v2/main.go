@@ -6,9 +6,9 @@ import (
 	"log"
 	"time"
 
-	"go-mcp/protocol"
-	"go-mcp/server"
-	"go-mcp/transport"
+	"github.com/ThinkInAIXYZ/go-mcp/protocol"
+	"github.com/ThinkInAIXYZ/go-mcp/server"
+	"github.com/ThinkInAIXYZ/go-mcp/transport"
 )
 
 func main() {
