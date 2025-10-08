@@ -23,7 +23,7 @@ var (
 )
 
 func init() {
-	flag.StringVar(&transport, "transport", "stdio", "The transport to use, should be \"stdio\" or \"sse\"")
+	flag.StringVar(&transport, "transport", "sse", "The transport to use, should be \"stdio\" or \"sse\"")
 	flag.StringVar(&serverlisten, "server_listen", "localhost:8080", "The sse server listen address")
 	flag.Parse()
 }

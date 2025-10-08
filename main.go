@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 	"strings"
+	"time"
 
 	"github.com/mark3labs/mcp-go/client"
 	"github.com/mark3labs/mcp-go/mcp"
@@ -41,6 +42,7 @@ func main() {
 		BaseURL: os.Getenv("OPENAI_API_URL"),
 		Model:   os.Getenv("MODEL_ID"),
 		APIKey:  os.Getenv("OPENAI_API_KEY"),
+		Timeout: 30 * time.Second,
 	})
 	agent, _ := react.NewAgent(ctx, &react.AgentConfig{
 		Model:       llm,
